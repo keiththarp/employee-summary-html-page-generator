@@ -32,7 +32,7 @@ buildEngineer = () => {
     },
     {
       type: "input",
-      name: "officeNumber",
+      name: "github",
       message: "Engineer's GitHub username?"
 
     }
@@ -88,7 +88,7 @@ buildIntern = () => {
     },
     {
       type: "input",
-      name: "officeNumber",
+      name: "school",
       message: "Intern's school?"
 
     }
@@ -192,6 +192,8 @@ init = () => {
 
 exitQuestions = () => {
   console.log(employeeList);
+  render(employeeList);
+  console.log(render(employeeList));
 }
 
 init()
