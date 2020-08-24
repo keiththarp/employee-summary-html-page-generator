@@ -9,7 +9,57 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+const { inherits } = require("util");
+const employeeList = [];
 
+
+
+
+init = () => {
+  const mngrDetails = inquirer.prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "Please provide Manager's name."
+    },
+    {
+      type: "input",
+      name: "id",
+      message: "Manager's ID#?"
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Manager's email address?",
+    },
+    {
+      type: "input",
+      name: "officeNumber",
+      message: "This team's office number?"
+
+    }
+  ])
+    .then(results => {
+
+      console.log(results);
+      // // If the user's guess is in the current word, log that they chose correctly
+      // const didGuessCorrectly = this.currentWord.guessLetter(val.choice);
+      // if (didGuessCorrectly) {
+      //   console.log(chalk.green("\nCORRECT!!!\n"));
+
+      //   // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
+      // } else {
+      //   this.guessesLeft--;
+      //   console.log(chalk.red("\nINCORRECT!!!\n"));
+      //   console.log(this.guessesLeft + " guesses remaining!!!\n");
+      // }
+    });
+
+
+
+}
+
+init()
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
