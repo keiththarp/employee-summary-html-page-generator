@@ -194,6 +194,11 @@ exitQuestions = () => {
   console.log(employeeList);
   render(employeeList);
   console.log(render(employeeList));
+
+  fs.writeFile(outputPath, render(employeeList), function (err) {
+    if (err) return console.log(err);
+
+  });
 }
 
 init()
