@@ -47,22 +47,7 @@ buildEngineer = () => {
 
       console.log(`\n${name} has been added!\n`);
 
-      inquirer.prompt({
-        type: "list",
-        name: "addAnother",
-        message: "Would you like to add another employee?",
-        choices: [
-          'YES',
-          "NO"
-        ]
-      })
-        .then(choice => {
-          if (choice.addAnother === 'YES') {
-            buildEmployeeList();;
-          } else {
-            exitQuestions();
-          }
-        })
+      addAnother();
     });
 
 }
@@ -103,25 +88,30 @@ buildIntern = () => {
 
       console.log(`\n${name} has been added!\n`);
 
-      inquirer.prompt({
-        type: "list",
-        name: "addAnother",
-        message: "Would you like to add another employee?",
-        choices: [
-          'YES',
-          "NO"
-        ]
-      })
-        .then(choice => {
-          if (choice.addAnother === 'YES') {
-            buildEmployeeList();;
-          } else {
-            exitQuestions();
-          }
-        })
+      addAnother();
+
     });
 
 }
+
+addAnother = () => {
+  inquirer.prompt({
+    type: "list",
+    name: "addAnother",
+    message: "Would you like to add another employee?",
+    choices: [
+      'YES',
+      "NO"
+    ]
+  })
+    .then(choice => {
+      if (choice.addAnother === 'YES') {
+        buildEmployeeList();;
+      } else {
+        exitQuestions();
+      }
+    })
+};
 
 buildEmployeeList = () => {
 
@@ -190,9 +180,8 @@ init = () => {
 }
 
 exitQuestions = () => {
-  console.log(employeeList);
+
   render(employeeList);
-  console.log(render(employeeList));
 
   fs.writeFile(outputPath, render(employeeList), function (err) {
     if (err) return console.log(err);

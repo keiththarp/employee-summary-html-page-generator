@@ -104,4 +104,6 @@ dist
 .tern-port
 
 # System adds
-.DS_Store/
+
+Assets/.DS_Store
+.DS_Store

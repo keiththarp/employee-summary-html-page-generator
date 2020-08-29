@@ -2,5 +2,7 @@ div.employee-card {
   margin: 5px;
 }
 div.team-heading {
-  background-color: bisque;
+  background-image: url("./apple-bg-narrow.png");
+  background-position: center;
+  background-color: #acf2f2;
 }
