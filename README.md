@@ -3,7 +3,7 @@
 
   The Employee Summary html Page Generator is a simple CLI that provides prompts for a user to quickly answer questions about their engineering team to easily create an html page to display the team.
 
-**View video of functioning app at -** https://youtu.be/suQlBWO06yQ
+**View video of functioning app at -** https://youtu.be/N_9BvzdEpzc
 
 ![Employee Summary html Page Generator screen shot](./Assets/Employee-Summary-html-Page-Generator.png)
 
