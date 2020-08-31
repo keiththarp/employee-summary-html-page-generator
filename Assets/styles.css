@@ -1,8 +1,26 @@
+body {
+  background-color: #f0f0f0;
+}
+
+div.card-header {
+  background-color: #c0e8e9;
+}
+
 div.employee-card {
   margin: 5px;
 }
 div.team-heading {
   background-image: url("./apple-bg-narrow.png");
   background-position: center;
-  background-color: #acf2f2;
+  background-color: #c0e8e9;
+}
+
+div.team-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.employee-card  {
+  width: 300px;
+  border: 1px solid #4fe6e9;
 }
