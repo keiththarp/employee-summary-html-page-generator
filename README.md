@@ -12,7 +12,7 @@
 - [Usage](#How-to-use)
 - [Contribute](#How-to-contribute)
 - [Testing](#For-testing)
-- [Questions](#Developed-by:)
+- [Questions](#Developed-by)
 - [Credits](#Acknowledgments-and-Credits)
 - [License](#Licensed-under-MIT)
 
@@ -23,14 +23,12 @@ The app can be downloaded from GitHub and saved in a convenient directory.
 The app is very easy to use. Launch from the command line using 'node app.js' then simply answer the resulting questions.
 
 ## How to contribute
-
 If anyone would like to improve the app by contributing, they're welcome to submit a pull request on GitHub.
 
 ## For testing
-
 Employee Summary html Page Generator can be tested with supplied tests by using 'npm run test' from the command line.
 
-## Developed by:
+## Developed by
 - Keith Tharp
 
 Please reach out with questions at:
